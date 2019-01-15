@@ -38,10 +38,12 @@
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "mkdir -p storage/framework/views;mkdir -p storage/framework/sessions;mkdir -p storage/framework/cache;chmod 777 -R storage",
             "php artisan optimize"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "mkdir -p storage/framework/views",
             "php artisan optimize"
         ]
     },
