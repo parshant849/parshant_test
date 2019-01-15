@@ -11,16 +11,6 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/', 'TestController@index');
-Route::post('/create_database', 'HomeController@createDb')->name('create_database');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', function () {
+    return view('welcome');
+});
