@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                   stagging test 12345
+                   Stagging App
                 </div>
 
                 <div class="links">
