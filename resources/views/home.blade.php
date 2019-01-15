@@ -13,20 +13,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    
-                     <form method="POST" action="{{url('create_database')}}">
-                        @csrf
-                        <div class="form-group row">
-                            <div class="col-md-6">
-                                <input id="" type="text" class="form-control" name="database_name" required>
-                            </div>
-                        </div>
-                         <button type="submit" class="btn btn-primary">Create Database</button>
-                    </form>     
-<br><br><br>
-@foreach($databases as $database)
-    <li>{{$database->name}}</li>
-@endforeach
+
+                    You are logged in!
                 </div>
             </div>
         </div>
