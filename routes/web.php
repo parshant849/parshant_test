@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::get('/error', function () {
     return view('welcomeq');
 });
+
+Route::get('dns/info', 'DnsController@getSiteDnsInfo');
