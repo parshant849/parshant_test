@@ -11,7 +11,7 @@ class DnsController extends Controller
 	if(isset($input['site'])) {
 		
 
-		$r = dns_get_record($input['site']);
+		$r = dns_get_record($input['site'], DNS_ALL);
 
 		echo '<pre>'; print_r($r); die;	
 	} else {
